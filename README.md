@@ -91,8 +91,11 @@ Resource           | Description
 :------------------|:------------------
 [AVH_CI_Template](https://github.com/Arm-Examples/AVH_CI_Template)     | CI Template for unit test automation that uses GitHub Actions.
 [CMSIS Version 6](https://github.com/ARM-software/CMSIS_6/actions)     | Runs a CMSIS-Core validation test across the supported processors using multiple compilers.
-[RTOS2 Validation](https://github.com/ARM-software/CMSIS-RTX/actions)  | Runs the CMSIS-RTOS2 validation accross Keil RTX using source and library variants.
+[RTOS2 Validation](https://github.com/ARM-software/CMSIS-RTX/actions)  | Runs the CMSIS-RTOS2 validation across Keil RTX using source and library variants.
+[STM32H743I-EVAL_BSP](https://github.com/Open-CMSIS-Pack/STM32H743I-EVAL_BSP) | Build test of a Board Support Pack (BSP) with MDK-Middleware [Reference Applications](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md) using Arm Compiler or GCC. The artifacts store the various example projects for testing on the hardware board.
+[MDK Middleware](https://github.com/ARM-software/MDK-Middleware)       | Build test of MDK-Middleware library and device agonistic [Reference Applications](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md) using Arm Compiler or GCC.
 [TFL Micro Speech](https://github.com/arm-software/AVH-TFLmicrospeech) | This example project shows the Virtual Streaming Interface with Audio input and uses [software layers](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/build-overview.md#software-layers) for retargeting.
+
 
 ## Other Developer Resources
 
