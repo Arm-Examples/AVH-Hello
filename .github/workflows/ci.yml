@@ -1,0 +1,32 @@
+#
+# Copyright (C) 2020-2024 Arm Limited or its affiliates and Contributors. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+#
+name: Publishable
+
+concurrency:
+  group: ${{ github.repository }}-${{ github.workflow }}-${{ inputs.branch || github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: [ main ]
+    tags-ignore:
+      - '**'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  publish-project-action:
+    name: Publish Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/publish-cmsis-example@latest
+        name: Publish Project Action
+        with:
+          branch: ${{ github.branch || github.ref }}
+          project-file: ./Hello.csolution.yml
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
+          PUBLISH_API_KEY: ${{ secrets.KEIL_API_TOKEN }}
+          CMSIS_API_KEY: ${{ secrets.CMSIS_API_KEY }}
