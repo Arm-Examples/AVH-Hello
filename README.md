@@ -1,3 +1,10 @@
+[![License](https://img.shields.io/github/license/Arm-Examples/AVH-Hello?label)](https://github.com/Arm-Examples/AVH-Hello/blob/main/LICENSE)
+[![Keil Studio Cloud - Import Project](https://img.shields.io/badge/Keil_Studio_Cloud-Import_Project-0091bd?logo=arm&logoColor=0091bd)](https://studio.keil.arm.com/?import=https://github.com/Arm-Examples/AVH-Hello.git)
+[![Test Build and Execution](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/hello-ci.yml?logo=arm&logoColor=0091bd&label=Build%20Test%20and%20Execution)](https://github.com/Arm-Examples/AVH-Hello/tree/main/.github/workflows/hello-ci.yml)
+[![Example published](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/verify.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
+
+
 # AVH-Hello
 
 This repository contains a CI project with a [test matrix](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs) that uses [GitHub Actions](https://github.com/features/actions) on a [GitHub-hosted runner](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners) with an Ubuntu Linux system. The application module [`hello.c`](.\hello.c) prints "Hello World" with count value to the UART output. It is configured for [Arm Virtual Hardware - Fixed Virtual Platforms](https://arm-software.github.io/AVH/main/simulation/html/index.html) (AVH FVP), but it is easy to re-target it to hardware that provides a [CMSIS Driver:USART](https://arm-software.github.io/CMSIS_6/latest/Driver/group__usart__interface__gr.html).
@@ -55,7 +62,7 @@ Parameters\Flags              | Description
 To execute the application on an [AVH FVP simulation model](https://arm-software.github.io/AVH/main/simulation/html/index.html) use the following command line:
 
 ```txt
-> FVP_Corstone_SSE-300 -a ./out/Hello/CS300/Debug/AC6/Hello.axf -f ./FVP/FVP_Corstone_SSE-300.cfg --simlimit 60
+> FVP_Corstone_SSE-300 -a ./out/Hello/CS300/Debug/AC6/Hello.axf -f ./FVP/FVP_Corstone_SSE-300/fvp_config.txt --simlimit 60
 ```
 
 Parameters\Flags              | Description
