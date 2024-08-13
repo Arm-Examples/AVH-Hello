@@ -1,8 +1,8 @@
 [![License](https://img.shields.io/github/license/Arm-Examples/AVH-Hello?label)](https://github.com/Arm-Examples/AVH-Hello/blob/main/LICENSE)
 [![Keil Studio Cloud - Import Project](https://img.shields.io/badge/Keil_Studio_Cloud-Import_Project-0091bd?logo=arm&logoColor=0091bd)](https://studio.keil.arm.com/?import=https://github.com/Arm-Examples/AVH-Hello.git)
-[![Test Build and Execution](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/hello-ci.yml?logo=arm&logoColor=0091bd&label=Build%20Test%20and%20Execution)](https://github.com/Arm-Examples/AVH-Hello/tree/main/.github/workflows/hello-ci.yml)
-[![Example published](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
-[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/verify.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
+[![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/hello-ci.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](https://github.com/Arm-Examples/AVH-Hello/tree/main/.github/workflows/hello-ci.yml)
+[![Example published](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/publish-ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/verify-ci.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 
 # AVH-Hello
