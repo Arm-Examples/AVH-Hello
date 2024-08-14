@@ -1,4 +1,4 @@
-name: Test Build and Execution
+name: Build and Execution Test
 
 on:
   workflow_dispatch:
