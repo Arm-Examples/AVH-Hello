@@ -41,7 +41,7 @@ The workflow allows to build and test the application on different host systems,
 To generate the application for a specific target-type, build-type, and compiler execute the following command line:
 
 ```txt
-> cbuild Hello.csolution.yml --update-rte --packs --context Hello.Debug+CS300 --toolchain AC6 --rebuild
+> cbuild Hello.csolution.yml --packs --context Hello.Debug+CS300 --toolchain AC6 --rebuild
 ```
 
 Parameters\Flags              | Description

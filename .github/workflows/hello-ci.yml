@@ -59,7 +59,7 @@ jobs:
       - name: Build context Hello.${{ matrix.build.type }}+${{ matrix.target.type }} with ${{ matrix.compiler.name }}
         working-directory: ./
         run: |
-            cbuild Hello.csolution.yml --update-rte --packs \
+            cbuild Hello.csolution.yml --packs \
                 --context Hello.${{ matrix.build.type }}+${{ matrix.target.type }} \
                 --toolchain ${{ matrix.compiler.name }} --rebuild
 

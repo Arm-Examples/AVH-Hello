@@ -1,0 +1,29 @@
+cbuild-pack:
+  resolved-packs:
+    - resolved-pack: ARM::CMSIS@6.1.0
+      selected-by-pack:
+        - ARM::CMSIS
+    - resolved-pack: ARM::CMSIS-Compiler@2.1.0
+      selected-by-pack:
+        - ARM::CMSIS-Compiler
+    - resolved-pack: ARM::CMSIS-RTX@5.9.0
+      selected-by-pack:
+        - ARM::CMSIS-RTX
+    - resolved-pack: ARM::SSE_315_BSP@1.0.0
+      selected-by-pack:
+        - ARM::SSE_315_BSP
+    - resolved-pack: ARM::V2M_MPS3_SSE_300_BSP@1.5.0
+      selected-by-pack:
+        - ARM::V2M_MPS3_SSE_300_BSP
+    - resolved-pack: ARM::V2M_MPS3_SSE_310_BSP@1.4.0
+      selected-by-pack:
+        - ARM::V2M_MPS3_SSE_310_BSP
+    - resolved-pack: Keil::V2M-MPS2_CMx_BSP@1.8.2
+      selected-by-pack:
+        - Keil::V2M-MPS2_CMx_BSP
+    - resolved-pack: Keil::V2M-MPS2_IOTKit_BSP@1.5.2
+      selected-by-pack:
+        - Keil::V2M-MPS2_IOTKit_BSP
+    - resolved-pack: Keil::V2M-MPS3_IOTKit_BSP@1.0.2
+      selected-by-pack:
+        - Keil::V2M-MPS3_IOTKit_BSP
