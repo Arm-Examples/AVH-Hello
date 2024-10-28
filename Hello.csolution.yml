@@ -2,6 +2,9 @@ solution:
 
   created-for: CMSIS-Toolbox@2.4.0
   description: Print Hello World and a counter value via UART
+  select-compiler:
+    - compiler: AC6
+    - compiler: GCC
   cdefault:
 
 
