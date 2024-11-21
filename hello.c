@@ -1,5 +1,6 @@
 /*---------------------------------------------------------------------------
- * Copyright (c) 2020 Arm Limited (or its affiliates). All rights reserved.
+ * Copyright (c) 2020-2024 Arm Limited (or its affiliates).
+ * All rights reserved.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -31,7 +32,7 @@
 
 static int count = 0;
 
-static void app_main (void *argument) {
+static void app_main_thread (void *argument) {
   (void)argument;
 
   while (1)  {
@@ -45,6 +46,9 @@ static void app_main (void *argument) {
 /*---------------------------------------------------------------------------
  * Application initialization
  *---------------------------------------------------------------------------*/
-void app_initialize (void) {
-  osThreadNew(app_main, NULL, NULL);
+int app_main (void) {
+  osKernelInitialize();                 // Initialize CMSIS-RTOS2
+  osThreadNew(app_main_thread, NULL, NULL);
+  osKernelStart();                      // Start thread execution
+  return 0;
 }

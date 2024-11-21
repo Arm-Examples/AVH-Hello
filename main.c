@@ -1,5 +1,6 @@
 /*---------------------------------------------------------------------------
- * Copyright (c) 2021 Arm Limited (or its affiliates). All rights reserved.
+ * Copyright (c) 2021-2024 Arm Limited (or its affiliates).
+ * All rights reserved.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -16,30 +17,12 @@
  * limitations under the License.
  *---------------------------------------------------------------------------*/
 
-#include "RTE_Components.h"
-#include  CMSIS_device_header
-#include "cmsis_os2.h"
-#ifdef RTE_Compiler_EventRecorder
-#include "EventRecorder.h"
-#endif
-
 #include "main.h"
-
-extern int stdio_init (void);
 
 int main (void) {
   stdio_init();                         // Initialize stdio
 
-
-#if defined(RTE_Compiler_EventRecorder) && \
-    (defined(__MICROLIB) || \
-    !(defined(RTE_CMSIS_RTOS2_RTX5) || defined(RTE_CMSIS_RTOS2_FreeRTOS)))
-  EventRecorderInitialize(EventRecordAll, 1U);
-#endif
-
-  osKernelInitialize();                 // Initialize CMSIS-RTOS2
-  app_initialize();                     // Initialize application
-  osKernelStart();                      // Start thread execution
+  app_main();                           // Execute Application main
 
   for (;;) {}
 }
