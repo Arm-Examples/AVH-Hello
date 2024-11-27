@@ -1,6 +1,56 @@
+# A project translates into one executable or library.
 project:
 
-# it is recommended to list the packs that contain the components in the cproject.yml file.
+  # List components to use for your application.
+  # A software component is a re-usable unit that may be configurable.
+  components:
+    - component: CMSIS:CORE
+    - component: CMSIS:RTOS2:Keil RTX5&Source
+    - component: CMSIS:OS Tick:SysTick
+    - component: CMSIS Driver:USART
+    - component: Device:Startup&C Startup
+    - component: CMSIS-Compiler:CORE
+    - component: CMSIS-Compiler:STDERR:Custom
+    - component: CMSIS-Compiler:STDOUT:Custom
+    - component: CMSIS-Compiler:STDIN:Custom
+
+    - component: Device:Native Driver:IO
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+
+    - component: Device:Native Driver:UART
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+
+    - component: Device:Native Driver:SysCounter
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+
+    - component: Device:Native Driver:SysTimer
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+
+    - component: Device:Native Driver:Timeout
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+   
+    - component: Device:Definition
+      for-context:
+      - +CS300
+      - +CS310
+      - +CS315
+
+  # List of source groups and files added to a project or a layer.
   groups:
     - group: Documentation
       files: 
@@ -10,56 +60,7 @@ project:
         - file: ./main.c
     - group: App
       files:
-          - file: ./hello.c
+        - file: ./hello.c
     - group: Board IO
       files:
         - file: ./Board_IO/retarget_stdio.c
-
-  components:
-    - component: CMSIS:CORE                             # short form, vendor selected from available packs
-    - component: ARM::CMSIS:RTOS2:Keil RTX5&Source      # long form, vendor explicitly stated
-    - component: ARM::CMSIS:OS Tick:SysTick
-    - component: CMSIS Driver:USART
-    - component: Device:Startup&C Startup
-    - component: ARM::CMSIS-Compiler:CORE
-    - component: ARM::CMSIS-Compiler:STDERR:Custom
-    - component: ARM::CMSIS-Compiler:STDOUT:Custom
-    - component: ARM::CMSIS-Compiler:STDIN:Custom
-    
-
-    - component: ARM::Device:Native Driver:IO
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-
-    - component: ARM::Device:Native Driver:UART
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-
-    - component: ARM::Device:Native Driver:SysCounter
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-
-    - component: ARM::Device:Native Driver:SysTimer
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-
-    - component: ARM::Device:Native Driver:Timeout
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-   
-    - component: ARM::Device:Definition
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-
