@@ -17,6 +17,7 @@ solution:
     - pack: ARM::V2M_MPS3_SSE_300_BSP          # Corstone-300 (Cortex-M55)
     - pack: ARM::V2M_MPS3_SSE_310_BSP          # SSE-310-MPS3_FVP
     - pack: ARM::SSE_315_BSP                   # SSE-315-FVP
+    - pack: ARM::SSE_320_BSP                   # SSE-320-FVP    
     - pack: Keil::V2M-MPS2_CMx_BSP             # For Cortex-M0 .. M33  ;  AVH-CM* devices.
     - pack: Keil::V2M-MPS2_IOTKit_BSP          # For the IOTKit_CM23_VHT, IOTKit_CM33_VHT, and IOTKit_CM33_FP_VHT devices
     - pack: Keil::V2M-MPS3_IOTKit_BSP          # For the IOTKit_CM33_MPS3 and the IOTKit_CM33_FP_MPS3 devices
@@ -32,6 +33,9 @@ solution:
 
     - type: CS315
       device: ARM::SSE-315-FVP
+
+    - type: CS320
+      device: ARM::SSE-320-FVP
 
     - type: CM0plus
       device: ARM::CMSDK_CM0plus_VHT

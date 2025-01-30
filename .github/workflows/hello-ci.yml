@@ -33,7 +33,8 @@ jobs:
           {type: CM33_FP,   model: FVP_MPS2_Cortex-M33,     uart: fvp_mps2.UART0}, 
           {type: CS300,     model: FVP_Corstone_SSE-300,    uart: mps3_board.uart0},
           {type: CS310,     model: FVP_Corstone_SSE-310,    uart: mps3_board.uart0},
-          {type: CS315,     model: FVP_Corstone_SSE-315,    uart: mps4_board.uart0} 
+          {type: CS315,     model: FVP_Corstone_SSE-315,    uart: mps4_board.uart0},
+          {type: CS320,     model: FVP_Corstone_SSE-320,    uart: mps4_board.uart0}          
         ]
         build: [ 
           {type: Release},

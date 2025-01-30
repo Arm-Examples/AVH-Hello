@@ -19,36 +19,42 @@ project:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
 
     - component: Device:Native Driver:UART
       for-context:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
 
     - component: Device:Native Driver:SysCounter
       for-context:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
 
     - component: Device:Native Driver:SysTimer
       for-context:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
 
     - component: Device:Native Driver:Timeout
       for-context:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
    
     - component: Device:Definition
       for-context:
       - +CS300
       - +CS310
       - +CS315
+      - +CS320
 
   # List of source groups and files added to a project or a layer.
   groups:
