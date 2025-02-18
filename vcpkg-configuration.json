@@ -12,7 +12,7 @@
         "arm:debuggers/arm/armdbg": "^6.3.0",
         "arm:models/arm/avh-fvp": "^11.27.31",
         "arm:compilers/arm/arm-none-eabi-gcc": "^13.3.1",
-        "arm:tools/kitware/cmake": "^3.28.4",
+        "arm:tools/kitware/cmake": "^3.31.5",
         "arm:tools/ninja-build/ninja": "^1.12.0"
     }
 }
