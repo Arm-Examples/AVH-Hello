@@ -10,6 +10,7 @@ on:
     - cron:  '0 6 * * 1'
 
 jobs:
+
   install_build_execute:
     runs-on: ubuntu-24.04-arm
 
