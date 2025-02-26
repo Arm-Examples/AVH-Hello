@@ -50,7 +50,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-- name: Install tools
+      - name: Install tools
         uses: ARM-software/cmsis-actions/vcpkg@v1
 
       - name: Activate Arm tool license
