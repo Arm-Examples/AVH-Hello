@@ -1,4 +1,4 @@
-name: Build and Execution Test Ubuntu 22.04 on ARM64
+name: Build and Execution Test MacOS14 on ARM64
 
 on:
   workflow_dispatch:
