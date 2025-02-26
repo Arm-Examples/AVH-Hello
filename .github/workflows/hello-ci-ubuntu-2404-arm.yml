@@ -9,8 +9,12 @@ on:
   schedule:
     - cron:  '0 6 * * 1'
 
-jobs:
+env:
+  GIT_CURL_VERBOSE: True
+  GIT_TRACE: True
+  GIT_SSH_COMMAND: ssh -vvv
 
+jobs:
   install_build_execute:
     runs-on: ubuntu-24.04-arm
 
