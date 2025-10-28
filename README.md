@@ -18,7 +18,7 @@ This repository contains a CI project with a [test matrix](https://docs.github.c
 ## Examples Description
 | Example name                              | Description   |
 |---                                        |---            |
-| [Hello](Hello.csolution.yml)              | The application module [`hello.c`](.\hello.c) prints "Hello World" with count value to the UART output. It is configured for [Arm Virtual Hardware - Fixed Virtual Platforms](https://arm-software.github.io/AVH/main/simulation/html/index.html) (AVH FVP), but it is easy to re-target it to hardware that provides a [CMSIS Driver:USART] (https://arm-software.github.io/CMSIS_6/latest/Driver/group__usart__interface__gr.html). |
+| [Hello](Hello.csolution.yml)              | The application module [`hello.c`](.\hello.c) prints "Hello World" with count value to the UART output. It is configured for [Arm Fixed Virtual Platforms](https://arm-software.github.io/AVH/main/simulation/html/index.html) (Arm FVP), but it is easy to re-target it to hardware that provides a [CMSIS Driver:USART] (https://arm-software.github.io/CMSIS_6/latest/Driver/group__usart__interface__gr.html). |
 
 
 
