@@ -49,7 +49,7 @@ The workflow allows to build and test the application on different host systems,
 
 ## Prerequisites for commandline build and execution
 
-- The required tools are installed from [ARM Tools Artifactory](https://www.keil.arm.com/artifacts/) using [vcpkg](https://learn.arm.com/learning-paths/microcontrollers/vcpkg-tool-installation/installation/).
+- The required tools are installed from [Arm Tools Artifactory](https://www.keil.arm.com/artifacts/) using [vcpkg](https://learn.arm.com/learning-paths/microcontrollers/vcpkg-tool-installation/installation/).
 - The required Software Packs are installed using the [CMSIS-Toolbox](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/README.md) `cbuild` utility with the option `--packs`.
 
 
