@@ -18,7 +18,7 @@ This repository contains a CI project with a [test matrix](https://docs.github.c
 ## Examples Description
 | Example name                              | Description   |
 |---                                        |---            |
-| [Hello](Hello.csolution.yml)              | The application module [`hello.c`](.\hello.c) prints "Hello World" with count value to the UART output. It is configured for [Arm Fixed Virtual Platforms](https://arm-software.github.io/AVH/main/simulation/html/index.html) (Arm FVP), but it is easy to re-target it to hardware that provides a [CMSIS Driver:USART] (https://arm-software.github.io/CMSIS_6/latest/Driver/group__usart__interface__gr.html). |
+| [Hello](Hello.csolution.yml)              | The application module [`hello.c`](.\hello.c) prints "Hello World" with count value to the UART output. It is configured for [Arm Fixed Virtual Platforms](https://arm-software.github.io/AVH/main/simulation/html/index.html) (Arm FVP), but it is easy to re-target it to hardware that provides a [CMSIS Driver:USART](https://arm-software.github.io/CMSIS_6/latest/Driver/group__usart__interface__gr.html). |
 
 
 
@@ -128,8 +128,8 @@ Resource           | Description
 
 ## Related Webinar Recordings
 
-- [MDK v6 Technical Deep Dive](https://on-demand.arm.com/flow/arm/devhub/sessionCatalog/page/pubSessCatalog/session/1713958336497001CQIR)
-- [CLI builds using CMSIS-Toolbox](https://on-demand.arm.com/flow/arm/devhub/sessionCatalog/page/pubSessCatalog/session/1708432622207001feYV)
-- [Using CMSIS-Toolbox and Keil MDK v6 in CI/CD Workflows](https://on-demand.arm.com/flow/arm/devhub/sessionCatalog/page/pubSessCatalog/session/1718006126984001DUAn)
-- [Using CMSIS-View and CMSIS-Compiler](https://on-demand.arm.com/flow/arm/devhub/sessionCatalog/page/pubSessCatalog/session/1706872120089001ictY)
-- [Data streaming with CMSIS-Stream and SDS](https://on-demand.arm.com/flow/arm/devhub/sessionCatalog/page/pubSessCatalog/session/1709221848113001nOU5)
+- [MDK v6 Technical Deep Dive](https://developer.arm.com/Additional%20Resources/Video%20Tutorials/Keil%20MDK%20v6%20Deep%20Dive)
+- [CLI builds using CMSIS-Toolbox](https://developer.arm.com/Additional%20Resources/Video%20Tutorials/CMSIS-Toolbox)
+- [Using CMSIS-Toolbox and Keil MDK v6 in CI/CD Workflows](https://developer.arm.com/Additional%20Resources/Video%20Tutorials/Using%20CMSIS-Toolbox%20and%20Keil%20MDK%20v6)
+- [Using CMSIS-View and CMSIS-Compiler](https://developer.arm.com/Additional%20Resources/Video%20Tutorials/CMSIS-View%20and%20CMSIS-Compiler)
+- [Data streaming with CMSIS-Stream and SDS](https://developer.arm.com/Additional%20Resources/Video%20Tutorials/CMSIS-Stream%20and%20SDS)
