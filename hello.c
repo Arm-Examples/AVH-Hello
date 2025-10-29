@@ -39,7 +39,7 @@ static void app_main_thread (void *argument) {
     printf ("Hello World %d\r\n", count);
     if (count >= 100) printf ("\x04");  // EOT (0x04) stops simulation
     count++;
-    osDelay (500);
+    osDelay (200);
   }
 }
 
