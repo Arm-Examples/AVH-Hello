@@ -10,6 +10,8 @@ solution:
     - compiler: AC6
     - compiler: GCC
 
+  compiler: AC6
+
   # List the packs that define the device and/or board.
   packs:
     - pack: ARM::CMSIS
@@ -30,45 +32,101 @@ solution:
 
     - type: CS310
       device: ARM::SSE-310-MPS3_FVP
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CS315
       device: ARM::SSE-315-FVP
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CS320
       device: ARM::SSE-320-FVP
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM0plus
       device: ARM::CMSDK_CM0plus_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM0
       device: ARM::CMSDK_CM0_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM3
       device: ARM::CMSDK_CM3_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM4
       device: ARM::CMSDK_CM4_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM4_FP
       device: ARM::CMSDK_CM4_FP_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM7
       device: ARM::CMSDK_CM7_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM7_SP
       device: ARM::CMSDK_CM7_SP_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM7_DP
       device: ARM::CMSDK_CM7_DP_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM23
       device: ARM::IOTKit_CM23_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM33
       device: ARM::IOTKit_CM33_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
     - type: CM33_FP
       device: ARM::IOTKit_CM33_FP_VHT
+      target-set:
+        - set:
+          images:
+            - project-context: Hello.Debug
 
   # List of different build configurations.
   build-types:
