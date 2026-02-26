@@ -1,5 +1,6 @@
-[![License](https://img.shields.io/github/license/Arm-Examples/AVH-Hello?label)](https://github.com/Arm-Examples/AVH-Hello/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/Arm-Examples/AVH-Hello?label=License)](https://github.com/Arm-Examples/AVH-Hello/blob/main/LICENSE)
 [![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/hello-ci.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](https://github.com/Arm-Examples/AVH-Hello/tree/main/.github/workflows/hello-ci.yml)
+[![Build and Execution Test on ARM64](https://img.shields.io/github/actions/workflow/status/Arm-Examples/AVH-Hello/hello-ci.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test%20on%20ARM64)](https://github.com/Arm-Examples/AVH-Hello/tree/main/.github/workflows/hello-ci-ubuntu-2404-arm.yml)
 
 # AVH-Hello
 
